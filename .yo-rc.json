@@ -1,0 +1,42 @@
+{
+  "generator-jhipster": {
+    "applicationType": "monolith",
+    "gitCompany": "",
+    "baseName": "webmation",
+    "packageName": "com.accenture.automation.web",
+    "packageFolder": "com/accenture/automation/web",
+    "serverPort": 8080,
+    "serviceDiscoveryType": false,
+    "authenticationType": "jwt",
+    "uaaBaseName": "../uaa",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "mssql",
+    "prodDatabaseType": "mssql",
+    "searchEngine": "elasticsearch",
+    "enableSwaggerCodegen": "true",
+    "messageBroker": false,
+    "buildTool": "maven",
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "testFrameworks": [],
+    "enableTranslation": true,
+    "nativeLanguage": "en",
+    "languages": [
+      "es",
+      "en"
+    ],
+    "clientFramework": "angularX",
+    "jhiPrefix": "jhi",
+    "jhipsterVersion": "5.8.1",
+    "jwtSecretKey": "YTk1OWQ5OWE4NDkwNWU1ODc0Nzg4MGIxNWQ1NTQ2NTM1ODMzY2U5Nzc4ODNiYzZmN2JiODAxY2MyZDg4OGJiYTFiMWRiZWNlZWVjZTllMWE0YWJmY2Q5MWViM2U4NTJjZjI4YTRkY2I2NzlmYmNmYjVkNWJlYjUyMjE5NjUwMTY=",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": []
+  },
+  "git-provider": "GitHub",
+  "git-company": "Zomahd",
+  "repository-name": "webmation"
+}

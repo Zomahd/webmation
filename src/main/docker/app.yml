@@ -1,0 +1,20 @@
+version: '2'
+services:
+    webmation-app:
+        image: webmation
+        environment:
+            - _JAVA_OPTIONS=-Xmx512m -Xms256m
+            - SPRING_PROFILES_ACTIVE=prod,swagger
+            - SPRING_DATASOURCE_URL=jdbc:sqlserver://webmation-mssql:1433;database=webmation
+            - JHIPSTER_SLEEP=10 # gives time for the database to boot before the application
+            - SPRING_DATA_JEST_URI=http://webmation-elasticsearch:9200
+        ports:
+            - 8080:8080
+    webmation-mssql:
+        extends:
+            file: mssql.yml
+            service: webmation-mssql
+    webmation-elasticsearch:
+        extends:
+            file: elasticsearch.yml
+            service: webmation-elasticsearch
